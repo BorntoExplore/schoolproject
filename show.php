@@ -5,7 +5,7 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Digital One Bank</title>
+  <title>Online Banking</title>
   <?php require 'assets/autoloader.php'; ?>
   <?php require 'assets/db.php'; ?>
   <?php require 'assets/function.php'; ?>
@@ -21,7 +21,7 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">
         <ion-icon name="card-outline" class="d-inline-block align-top" size="large"></ion-icon>
-        Digital One Bank
+        Online Banking
     </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -72,8 +72,8 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
           <td>Account Type</td>
           <th><?php echo $row['accountType'] ?></th>
         </tr><tr>
-          <td>Cnic</td>
-          <th><?php echo $row['cnic'] ?></th>
+          <td>nic</td>
+          <th><?php echo $row['nic'] ?></th>
           <td>City</td>
           <th><?php echo $row['city'] ?></th>
         </tr><tr>

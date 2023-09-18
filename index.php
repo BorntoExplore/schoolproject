@@ -5,7 +5,7 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Digital One Bank</title>
+  <title>Online Banking</title>
   <?php require 'assets/autoloader.php'; ?>
   <?php require 'assets/db.php'; ?>
   <?php require 'assets/function.php'; ?>
@@ -15,7 +15,7 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
  <a class="navbar-brand" href="#">
      <ion-icon name="card-outline" class="d-inline-block align-top" size="large"></ion-icon>
-        Digital One Bank
+        Online Banking
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
 <div class="row w-100 mt-5" >
   <div class="col" style="padding: 22px;padding-top: 0">
     <div class="bg-white jumbotron " style="padding: 25px;min-height: 241px;max-height: 241px">
-  <h4 class="display-5">Welcome to Online Bank</h4>
+  <h4 class="display-5">Welcome to Online Banking</h4>
   <p  class="lead alert alert-warning"><b>Latest Notification:</b>
 
   <?php 

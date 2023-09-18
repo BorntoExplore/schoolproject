@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Digital One Bank</title>
+	<title>Online Banking</title>
 	<?php require 'assets/autoloader.php'; ?>
 	<?php require 'assets/function.php'; ?>
 	<?php
@@ -101,7 +101,7 @@
 <body style="background:#e0e0e0">
 <nav class="navbar bg-body-tertiary bg-dark">
     <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1 text-light">Digital One Bank</span>
+        <span class="navbar-brand mb-0 h1 text-light">Online Banking</span>
     </div>
 </nav>
 <br>

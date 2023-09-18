@@ -5,7 +5,7 @@ if(!isset($_SESSION['cashId'])){ header('location:login.php');}
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Digital One Bank</title>
+  <title>Online Banking</title>
   <?php require 'assets/autoloader.php'; ?>
   <?php require 'assets/db.php'; ?>
   <?php require 'assets/function.php'; ?>

@@ -1,6 +1,6 @@
 <?php 
     $con = new mysqli('localhost', 'root', '', 'mybank');
-    define('bankName', 'Digital One Bank',true);
+    define('bankName', 'Online Bank Management System',true);
 
 if(isset($_SESSION['userId'])){
     $userId = $_SESSION['userId'];
