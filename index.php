@@ -29,9 +29,6 @@ if(!isset($_SESSION['userId'])){ header('location:login.php');}
       <li class="nav-item ">  <a class="nav-link" href="accounts.php">Accounts</a></li>
       <li class="nav-item ">  <a class="nav-link" href="statements.php">Account Statements</a></li>
       <li class="nav-item ">  <a class="nav-link" href="transfer.php">Funds Transfer</a></li>
-      <!-- <li class="nav-item ">  <a class="nav-link" href="profile.php">Profile</a></li> -->
-
-
     </ul>
     <?php include 'sideButton.php'; ?>
     
