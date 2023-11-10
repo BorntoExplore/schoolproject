@@ -7,11 +7,6 @@
 	<?php
 
     $con = new mysqli('localhost', 'root', '', 'mybank');
-	// if($con->connect_errno){
-	// 	echo 'Failed';
-	// 	$con->connect_error;
-	// 	exit();
-	// }
 
 		$error = "";
 		if (isset($_POST['userLogin']))

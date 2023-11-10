@@ -41,7 +41,7 @@ if(!isset($_SESSION['cashId'])){ header('location:login.php');}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">
         <ion-icon name="card-outline" class="d-inline-block align-top" size="large"></ion-icon>
-        Digital One Bank
+        Online Banking
     </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -117,7 +117,6 @@ if(!isset($_SESSION['cashId'])){ header('location:login.php');}
                     Account Holder Bank Name.
                     <input type='text' class='form-control' value='".bankName."' readonly required>Bank Balance
                     <input type='text' class='form-control my-1'  value='$.$row2[balance]' readonly required>
-                     
                   
                   </div>
                   <div class='col'>
@@ -126,12 +125,12 @@ if(!isset($_SESSION['cashId'])){ header('location:login.php');}
                      
                     <input type='hidden' value='$row2[accountNo]' name='accountNo' class='form-control ' required>
                     <input type='hidden' value='$row2[id]' name='userId' class='form-control ' required>
-                    <input type='number' class='form-control my-1' name='checkno' placeholder='Write Check Number' required>
+                    <input type='number' class='form-control my-1' name='checkno' value= '".rand(111111,999999)."' placeholder='Write Check Number' required>
                     <input type='number' class='form-control my-1' name='amount' placeholder='Write Amount for withdraw' max='$row2[balance]' required>
                    <button type='submit' name='withdraw' class='btn btn-primary btn-bloc btn-sm my-1'> Withdraw</button></form><form method='POST'> 
                     <input type='hidden' value='$row2[accountNo]' name='accountNo' class='form-control ' required>
                     <input type='hidden' value='$row2[id]' name='userId' class='form-control ' required>
-                   <input type='number' class='form-control my-1' name='checkno' placeholder='Write Check Number' required>
+                    <input type='number' class='form-control my-1' name='checkno' value= '".rand(111111,999999)."' placeholder='Write Check Number' required>
                     <input type='number' class='form-control my-1' name='amount' placeholder='Write Amount for deposit'  required>
 
                    <button type='submit' name='deposit' class='btn btn-success btn-bloc btn-sm my-1'> Deposit</button></form>
