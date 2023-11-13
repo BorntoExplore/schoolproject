@@ -52,10 +52,6 @@ if(!isset($_SESSION['cashId'])){ header('location:login.php');}
       <li class="nav-item ">
         <a class="nav-link active" href="cindex.php">Home <span class="sr-only">(current)</span></a>
       </li>
-      <!-- <li class="nav-item"><a class="nav-link" href="caccounts.php">Account Setting</a></li> -->
-     <!--  <li class="nav-item"><a class="nav-link" href="statements.php">Account Statements</a></li>
-      <li class="nav-item"><a class="nav-link" href="transfer.php">Funds Transfer</a></li> -->
-      <!-- <li class="nav-item ">  <a class="nav-link" href="profile.php">Profile</a></li> -->
     </ul>
     <?php include 'csideButton.php'; ?>
     
