@@ -121,12 +121,12 @@ if(!isset($_SESSION['cashId'])){ header('location:login.php');}
                      
                     <input type='hidden' value='$row2[accountNo]' name='accountNo' class='form-control ' required>
                     <input type='hidden' value='$row2[id]' name='userId' class='form-control ' required>
-                    <input type='number' class='form-control my-1' name='checkno' readonly value= '".rand(111111,999999)."' placeholder='Write Check Number' required>
+                    <input type='number' class='form-control my-1' name='checkno' readonly value= '".rand(1111111111,9999999999)."' placeholder='Write Check Number' required>
                     <input type='number' class='form-control my-1' name='amount' placeholder='Write Amount for withdraw' max='$row2[balance]' required>
                    <button type='submit' name='withdraw' class='btn btn-primary btn-bloc btn-sm my-1'> Withdraw</button></form><form method='POST'> 
                     <input type='hidden' value='$row2[accountNo]' name='accountNo' class='form-control ' required>
                     <input type='hidden' value='$row2[id]' name='userId' class='form-control ' required>
-                    <input type='number' class='form-control my-1' name='checkno' readonly value= '".rand(111111,999999)."' placeholder='Write Check Number' required>
+                    <input type='number' class='form-control my-1' name='checkno' readonly value= '".rand(1111111111,9999999999)."' placeholder='Write Check Number' required>
                     <input type='number' class='form-control my-1' name='amount' placeholder='Write Amount for deposit'  required>
 
                    <button type='submit' name='deposit' class='btn btn-success btn-bloc btn-sm my-1'> Deposit</button></form>
