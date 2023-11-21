@@ -17,6 +17,7 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
     }
   } ?>
 </head>
+
 <body style="background:#e0e0e0;background-size: 100%">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">
@@ -46,7 +47,8 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
     All accounts
   </div>
   <div class="card-body">
-   <table class="table table-borderless">
+  <div class="table-responsive">
+  <table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -56,7 +58,7 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
       <th scope="col">Current Balance</th>
       <th scope="col">Account type</th>
       <th scope="col">Contact</th>
-      <th scope="col"></th>
+      <th scope="col" style="min-width:250px" >Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -77,9 +79,9 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
         <td><?php echo $row['accountType'] ?></td>
         <td><?php echo $row['number'] ?></td>
         <td>
-          <a href="show.php?id=<?php echo $row['id'] ?>" class='btn alert-success btn-sm' data-toggle='tooltip' title="View More info">View</a>
-          <a href="mnotice.php?id=<?php echo $row['id'] ?>" class='btn alert-warning btn-sm' data-toggle='tooltip' title="Send notice to this">Send Notice</a>
-          <a href="mindex.php?delete=<?php echo $row['id'] ?>" class='btn  alert-danger btn-sm' data-toggle='tooltip' title="Delete this account">Delete</a>
+          <a href="show.php?id=<?php echo $row['id'] ?>" class='btn  alert-success btn-sm' data-toggle='tooltip' title="View More info">View</a>
+          <a href="mnotice.php?id=<?php echo $row['id'] ?>" class='btn  alert-warning btn-sm' data-toggle='tooltip' title="Send notice to this">Send Notice</a>
+          <a href="mindex.php?delete=<?php echo $row['id'] ?>" class='btn   alert-danger btn-sm' data-toggle='tooltip' title="Delete this account">Delete</a>
         </td>
         
       </tr>
@@ -89,6 +91,7 @@ if(!isset($_SESSION['managerId'])){ header('location:login.php');}
      ?>
   </tbody>
 </table>
+    </div>
   <div class="card-footer text-muted bg-white">
       <?php echo bankName ?>
   </div>

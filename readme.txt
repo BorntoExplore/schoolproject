@@ -8,6 +8,6 @@ Cashier
 Username :cashier@cashier.com
 Password :cashier
 
-User
+Customer
 Username: some@gmail.com
 Password: some
