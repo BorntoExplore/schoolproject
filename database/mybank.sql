@@ -59,10 +59,6 @@ CREATE TABLE `feedback` (
 -- Dumping data for table `feedback`
 --
 
-INSERT INTO `feedback` (`feedbackId`, `message`, `userId`, `date`) VALUES
-(1, 'This message is from jack\r\n', 1, '2023-11-21 16:41:24'),
-(2, 'This message is from miko\r\n', 2, '2023-11-21 16:42:20'),
-(3, 'This message is from zayn\r\n', 3, '2023-11-21 16:43:12');
 
 -- --------------------------------------------------------
 
@@ -83,13 +79,6 @@ CREATE TABLE `login` (
 -- Dumping data for table `login`
 --
 
-INSERT INTO `login` (`id`, `name`, `email`, `password`, `type`, `date`) VALUES
-(1, 'manager', 'manager@manager.com', 'manager', 'manager', '2023-11-20 08:08:00'),
-(2, 'cashier1', 'cashier1@cashier.com', '$2y$10$OTdwggZdktunffcFlx94Xus6sSc5TYJKxor5HCgX0Qkwxs7LtxNim', 'cashier', '2023-11-21 16:47:17'),
-(3, 'cashier2', 'cashier2@cashier.com', '$2y$10$GMbVHMPk/ASlx1YoWU3V8eByMMyopNJsQ4hCwhq.ZL.LKEd.ejRBW', 'cashier', '2023-11-21 16:47:39'),
-(4, 'cashier3', 'cashier3@casher.com', '$2y$10$cx/6DEthvf93U.S6RNRzkOxpObLbymFQIDm5GkzLIAbhxbj3CACOu', 'cashier', '2023-11-21 16:47:49'),
-(5, 'cashier4', 'cashier4@cashier.com', '$2y$10$Vc5QSyi3ZTCPt6fwwll0C.Sc6cqmJ8/NlhdJXiirC1o7EmyMZyb2S', 'cashier', '2023-11-21 17:00:02'),
-(30, 'cashier', 'cashier@cashier.com', '$2y$10$JJXK9LPV1ZjrR1rtm0pcxes038j5M6CJuQysCwPC4Upb2k74PFKt6', 'cashier', '2023-11-21 17:46:08');
 
 -- --------------------------------------------------------
 
@@ -108,10 +97,7 @@ CREATE TABLE `notice` (
 -- Dumping data for table `notice`
 --
 
-INSERT INTO `notice` (`id`, `userId`, `notice`, `date`) VALUES
-(1, '3', 'This message is from manager\r\n', '2023-11-21 16:56:57'),
-(2, '2', 'This message is from manager', '2023-11-21 16:57:15'),
-(3, '1', 'This message is from manager', '2023-11-21 16:57:27');
+
 
 -- --------------------------------------------------------
 
@@ -157,11 +143,6 @@ CREATE TABLE `transaction` (
 -- Dumping data for table `transaction`
 --
 
-INSERT INTO `transaction` (`transactionId`, `action`, `credit`, `debit`, `other`, `userId`, `date`) VALUES
-(1, 'transfer', '', '150000', '1700584685', 3, '2023-11-21 17:27:05'),
-(2, 'transfer', '', '50000', '1700584630', 3, '2023-11-21 17:29:45'),
-(3, 'transfer', '', '50000', '1700584685', 2, '2023-11-21 17:30:24'),
-(4, 'transfer', '', '50000', '1700584550', 2, '2023-11-21 17:31:06');
 
 -- --------------------------------------------------------
 
@@ -191,12 +172,7 @@ CREATE TABLE `useraccounts` (
 -- Dumping data for table `useraccounts`
 --
 
-INSERT INTO `useraccounts` (`id`, `is_first_login`, `email`, `password`, `name`, `balance`, `nic`, `number`, `city`, `address`, `source`, `accountNo`, `branch`, `accountType`, `date`) VALUES
-(1, 0, 'jack@jack.com', '$2y$10$tmMs15.qxwWoot8xB173UuqxXhmrfdSy81jN5clmyRyydbOUSDoDq', 'jack', '100000', '829281', '097895839', 'London', 'London', 'manager', '1700584550', '3', 'saving', '2023-11-21 16:37:10'),
-(2, 0, 'miko@miko.com', '$2y$10$l17k7Wmox97CnefZzc0Ao.JwhNXxG6ZNzpNJJMZMAPVw2Pkvt.CUq', 'Miko', '150000', '849586', '09586938593', 'Dawei', 'Dawei', 'Accounting', '1700584630', '2', 'saving', '2023-11-21 16:38:05'),
-(3, 0, 'zayn@zayn.com', '$2y$10$XlGJHDtTpYltxhFMDARYJOkW739oJaZ5CJphWT6ZOOvLI.8qaKbVO', 'Zayn', '200000', '627361', '09586837482', 'Yangon', 'Yangon', 'Engineer', '1700584685', '1', 'saving', '2023-11-21 16:38:57');
 
---
 -- Indexes for dumped tables
 --
 
