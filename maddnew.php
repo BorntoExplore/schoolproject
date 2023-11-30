@@ -96,7 +96,7 @@ if (isset($_GET['del']) && !empty($_GET['del']))
           <th>Email</th>
           <td><input type="email" name="email" class="form-control input-sm" required></td>
           <th>Password</th>
-          <td><input type="password" name="password" class="form-control input-sm" required></td>
+          <td><input type="password" name="password" readonly value="pass@1234" class="form-control input-sm" required></td>
         </tr>
         <tr>
           <th>Deposit</th>
