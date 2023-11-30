@@ -117,8 +117,8 @@
             <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <form method="POST">
-                        <input type="email" value="some@gmail.com" name="email" class="form-control" required placeholder="Enter Email">
-                        <input type="password" name="password" value="some" class="form-control" required placeholder="Enter Password">
+                        <input type="email" value="miko@miko.com" name="email" class="form-control" required placeholder="Enter Email">
+                        <input type="password" name="password" value="miko" class="form-control" required placeholder="Enter Password">
                         <button type="submit" class="btn btn-primary btn-block btn-sm my-1" name="userLogin">Enter </button>
                     </form>
                 </div>
