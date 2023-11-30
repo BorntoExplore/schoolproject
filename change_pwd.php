@@ -14,7 +14,7 @@ if(!isset($_SESSION['userId'])){
 
 	<?php
 
-    $con = new mysqli('localhost', 'kopaing', 'password', 'mybank');
+	$con = new mysqli('localhost', 'root', '', 'mybank');	
 	
 	if (isset($_POST['changePWD']))
 	{$userId = $_SESSION['userId'];
